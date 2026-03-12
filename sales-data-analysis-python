@@ -1,0 +1,12 @@
+sales-data-analysis-python
+│
+├── dataset
+│   └── sales_data.csv
+│
+├── notebook
+│   └── analysis.ipynb
+│
+├── images
+│   └── sales_chart.png
+│
+└── README.md
