@@ -1,0 +1,20 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# carregar dados
+df = pd.read_csv("sales_data.csv")
+
+# faturamento
+df["revenue"] = df["quantity"] * df["price"]
+
+# faturamento por produto
+product_sales = df.groupby("product")["revenue"].sum()
+
+print(product_sales)
+
+# gráfico
+product_sales.plot(kind="bar")
+plt.title("Faturamento por Produto")
+plt.xlabel("Produto")
+plt.ylabel("Receita")
+plt.show()
