@@ -1,0 +1,9 @@
+powerbi-sales-dashboard
+│
+├── dataset
+│   └── sales_data.csv
+│
+├── dashboard
+│   └── sales_dashboard.pbix
+│
+└── README.md
